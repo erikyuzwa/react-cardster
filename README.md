@@ -4,6 +4,12 @@ a simple project for demonstrating some basic React and Webpack structure
 
 ![Cardster taking charge](/screenshot.png)
 
+## directory structure
+
+* `public` - contains (mostly) static assets for the app as well as our `index.html` entry point
+* `src` - contains our React based modules which are transpiled with the help of webpack and babel
+* `test` - contains the chai and enzyme unit tests
+
 ## developer installation
 
 * `git clone https://github.com/erikyuzwa/react-cardster.git`
@@ -14,9 +20,17 @@ a simple project for demonstrating some basic React and Webpack structure
 
 ## running tests
 
+The unit test suite is put together using chai and enzyme.
+
+* `npm run test`
 
 ## production build
 
+The production / deployable build of the app can be put together with:
+
+* `npm run webpack`
+
+At which point the entire `./public` folder should be deployable to a web server.
 
 # License
 
