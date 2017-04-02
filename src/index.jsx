@@ -7,11 +7,12 @@ import { newDeck, deal } from './lib/cards';
 
 require('./css/main.scss');
 
+const numberOfStartingCards = 1;
 let deck = newDeck();
 let playerHand, dealerHand;
 
-[deck, playerHand] = deal(deck, 2);
-[deck, dealerHand] = deal(deck, 2);
+[deck, playerHand] = deal(deck, numberOfStartingCards);
+[deck, dealerHand] = deal(deck, numberOfStartingCards);
 
 const state = fromJS({
     deck,

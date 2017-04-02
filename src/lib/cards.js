@@ -1,5 +1,6 @@
 import { fromJS } from 'immutable';
 
+// the randomizer function to mix up our cards and suits
 export const shuffle = (array) => {
     let j, x, i;
     for (i = array.length; i; i -= 1) {
@@ -10,6 +11,7 @@ export const shuffle = (array) => {
     }
 };
 
+// generate new deck of playing cards
 export const newDeck = () => {
     const ranks = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
     const suits = ['S', 'C', 'H', 'D'];
@@ -22,6 +24,7 @@ export const newDeck = () => {
         });
     });
 
+    // engage the Randomizer!
     shuffle(deck);
 
     return fromJS(deck);

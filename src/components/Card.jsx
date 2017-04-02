@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * class Card
+ * Our component to display the actual playing card meta. Our handy SASS will take care of the styling, so just
+ * pull out our card properties via the props passed into this component.
+ */
 export default class Card extends React.Component {
     constructor(props) {
         super(props);
