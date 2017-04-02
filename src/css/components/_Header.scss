@@ -1,0 +1,16 @@
+
+.header {
+  text-align: center;
+  background-color: black;
+
+  h1 {
+    color: white;
+    padding: 20px;
+
+    .tagline {
+      font-size: 12pt;
+      color: white;
+      font-style: italic;
+    }
+  }
+}

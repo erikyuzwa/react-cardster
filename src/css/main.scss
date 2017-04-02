@@ -1,0 +1,16 @@
+
+/**
+ * main.scss
+ * This is our main SASS stylesheet for the project. While the individual component SASS modules are barely 10 lines
+ * in some of them, it's easier to find and debug any issues
+ */
+$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import 'components/ActionBar.scss';
+@import 'components/App.scss';
+@import 'components/Card.scss';
+@import 'components/Footer.scss';
+@import 'components/Hand.scss';
+@import 'components/Header.scss';
+
